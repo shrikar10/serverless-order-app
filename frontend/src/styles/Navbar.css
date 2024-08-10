@@ -3,13 +3,24 @@
     color: white;
     padding: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Spread out items */
+    align-items: center; /* Center items vertically */
   }
   
   .navbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+  }
+  
+  .navbar .nav-left {
+    flex: 1;
+  }
+  
+  .navbar .nav-right {
+    flex: 1;
+    justify-content: flex-end; /* Align items to the right */
     display: flex;
   }
   

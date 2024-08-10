@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
 import Navbar from './components/Navbar';
+import SignUpPage from './pages/SignUpPage';
 import HomePage from './pages/HomePage';
 // import SignupPage from './pages/SignupPage';
 // import OrderPage from './pages/OrderPage';
@@ -14,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/" element={<HomePage />} />
-        {/* <Route path="/signup" element={<SignupPage />} /> */}
+        <Route path="/signup" element={<SignUpPage />} />
         {/* <Route path="/order" element={<OrderPage />} /> */}
         {/* <Route path="/analytics" element={<AnalyticsPage />} /> */}
       </Routes>
