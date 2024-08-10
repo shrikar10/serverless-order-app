@@ -1,0 +1,21 @@
+service: serverless-order-app
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  app:
+    handler: index.handler
+    events:
+      - http:
+          path: /api/users
+          method: post
+      - http:
+          path: /api/users/validate
+          method: post
+    environment:
+      DB_URI: ${env:DB_URI} # Pass the environment variable
+
+plugins:
+  - serverless-offline
