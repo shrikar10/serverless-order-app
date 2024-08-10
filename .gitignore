@@ -1,0 +1,17 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# dotenv environment variables file
+.env
+
+# Build files
+dist/
+build/
+
+# Serverless Framework generated files
+.serverless/
