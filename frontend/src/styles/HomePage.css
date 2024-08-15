@@ -1,44 +1,111 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #333;
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --white-color: #fff;
+  --padding: 2rem;
+  --border-radius: 8px;
+  --max-width: 800px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
 .home-page {
-    padding: 2rem;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .home-header {
-    background-color: #007bff;
-    color: white;
+  padding: var(--padding);
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.home-header {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  width: 100%;
+  max-width: var(--max-width);
+  text-align: center;
+  margin-bottom: var(--padding);
+}
+
+.home-slider {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-bottom: var(--padding);
+}
+
+.home-slider img {
+  width: 100%;
+  border-radius: var(--border-radius);
+}
+
+.home-content {
+  margin: var(--padding) auto;
+  max-width: var(--max-width);
+  text-align: left;
+  background-color: var(--white-color);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-content h2 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.home-content ul {
+  list-style-type: disc;
+  margin-left: var(--padding);
+}
+
+.home-promotions {
+  margin: var(--padding) auto;
+  max-width: var(--max-width);
+  text-align: left;
+  background-color: var(--white-color);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-promotions h2 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.home-promotions ul {
+  list-style-type: disc;
+  margin-left: var(--padding);
+}
+
+.home-footer {
+  margin-top: auto;
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .home-page {
     padding: 1rem;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 800px;
-    text-align: center;
-    margin-bottom: 2rem;
   }
-  
-  .home-content {
-    margin: 2rem auto;
-    max-width: 800px;
-    text-align: left;
-  }
-  
-  .home-content h2 {
-    color: #333;
-    margin-bottom: 1rem;
-  }
-  
-  .home-content ul {
-    list-style-type: disc;
-    margin-left: 2rem;
-  }
-  
+
+  .home-header,
+  .home-content,
+  .home-promotions,
   .home-footer {
-    margin-top: 2rem;
+    max-width: 100%;
     padding: 1rem;
-    background-color: #333;
-    color: white;
-    width: 100%;
-    text-align: center;
   }
-  
+}

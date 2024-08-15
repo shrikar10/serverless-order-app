@@ -4,7 +4,6 @@ import LoginForm from '../components/LoginForm';
 function LoginPage() {
   return (
     <div>
-      <h1>Login page test</h1>
       <LoginForm />
     </div>
   );

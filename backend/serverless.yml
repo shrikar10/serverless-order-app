@@ -9,11 +9,8 @@ functions:
     handler: index.handler
     events:
       - http:
-          path: /api/users
-          method: post
-      - http:
-          path: /api/users/validate
-          method: post
+          path: /api/users/{proxy+}
+          method: any
     environment:
       DB_URI: ${env:DB_URI} # Pass the environment variable
 
